@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # PRODUCT_NAME := lineage_lemonades
-PRODUCT_NAME := infinity_lemonades
+PRODUCT_NAME := pixelos_lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -32,6 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OnePlus9R \
     SystemName=OnePlus9R
 
-INFINITY_MAINTAINER := "Spidey"
+PIXELOS_MAINTAINER := "Spidey"
 TARGET_HAS_UDFPS := true 
 WITH_GAPPS := true
